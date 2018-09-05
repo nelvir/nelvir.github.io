@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+.main {
+  float: left;
+  width: 90%; /*Container width, might result in scrollbars*/
+  height: 100%; /*Container height*/
+  padding: 0px 50px;
+  overflow: hidden;
+        display: flex;
+  justify-content: center;
+
+    -ms-transform: translate(0px, 0px); /* IE 9 */
+    -webkit-transform: translate(0px, 0px); /* Safari */
+    transform: translate(0px, 0px);
+        transform: scale(1, 1);
+}
+
+
+@media only screen and (max-width:650px) {
+  /* For Tablets: */
+  .main {
+    width: 125%;
+     /*100% width removes scrollbars*/
+    height: 200%;
+    display: flex;
+    justify-content: flex-start;
+        -ms-transform: scale(0.7, 0.7); /* IE 9 */
+    -webkit-transform: scale(0.7, 0.7); /* Safari */
+    transform: scale(0.7, 0.7);
+    transform-origin: top left;
+            display: flex;
+  justify-content: left;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  /* For mobile phones: */
+  .main {
+    width: 250%;
+    height: 350%;
+    display: flex;
+    justify-content: flex-start;
+        -ms-transform: scale(0.55, 0.55); /* IE 9 */
+    -webkit-transform: scale(0.55, 0.55); /* Safari */
+    transform: scale(0.55, 0.55);
+    transform-origin: top left;
+    display: flex;
+  justify-content: left;
+  }}
+
+</style>
+</head>
+<body style="font-family:Verdana;">
+<!--iframe width in pixels, might result in frame scrollbars-->
+<!--iframe height in pixels, might result in does not affect actual vertical distance-->
+  <div class="main">
+  <iframe 
+  scrolling="yes" 
+  seamless frameborder="0" 
+  width="610" 
+  
+  height="650"
+  align="middle"
+  
+src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRV5I6mNt-fnuvtV7S4e9Kzz2GbtTwI9pLnkj3jrTu1hpsAqNAcJJlVCYeRP6fI_eMyZCH98M_v4WfV/pubhtml?
+gid=278749158
+&single=true
+&amp;
+   format=interactive;
+   headers=false;
+   widget=false;
+&range=a4:r32
+&chrome=false">
+</iframe>
+  </div>
+
+
+</body>
+</html>
